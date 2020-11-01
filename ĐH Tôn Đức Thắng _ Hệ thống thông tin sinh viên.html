@@ -1,0 +1,481 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	
+    ĐH Tôn Đức Thắng | Hệ thống thông tin sinh viên
+
+</title>
+    <!-- jQuery 2.1.1 -->
+    <script src="/Assets/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <!-- Bootstrap 3.2.0 -->
+    <link href="/Assets/bootstrap-3.2.0/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" />
+    <script src="/Assets/bootstrap-3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Underscore -->
+    <script src="/Assets/underscore-min.js" type="text/javascript"></script>
+    <!-- Backbone -->
+    <script src="/Assets/backbone-min.js" type="text/javascript"></script>
+    <!-- ICanHaz -->
+    <script src="/Assets/ICanHaz.min.js" type="text/javascript"></script>
+    <!-- daterangepicker -->
+    <script src="/Assets/daterangepicker/moment.min.js" type="text/javascript"></script>
+    <!-- Awesome -->
+    <link href="/Content/reak/fonts/font-awesome/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css" />
+    <!-- bootbox -->
+    <script src="../../Assets/bootbox.min.js" type="text/javascript"></script>
+    <!-- Dividual -->
+    
+    <link href="/Content/reak/reak-normal.css" rel="stylesheet"
+        type="text/css" />
+    <script src="/Scripts/views/master/master.js?v=1101151505"
+        type="text/javascript"></script>
+    <script src="/Scripts/utils.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            utils.closeLoading();
+
+        });
+    </script>
+    <style type="text/css">
+        .student-info:hover
+        {
+            cursor: pointer;
+        }
+        
+        #loading
+        {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            left: 50%;
+            top: 25%;
+            z-index: 1000;
+            color: #0065a3;
+        }
+        
+        .fa-color-info
+        {
+            color: #00A68C;
+        }
+        
+        .fa-color-warning
+        {
+            color: #FE7424;
+        }
+        
+        .fa-color-error
+        {
+            color: #D63B6F;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">
+        <i class="fa fa-spinner fa-3x fa-spin"></i>
+    </div>
+    
+    <div id="body-wrapper">
+        <div class="header">
+            <div class="banner" style="vertical-align: middle">
+                <div class="banner-left home">
+                    <img class="" alt="logo" src="/Content/images/image.png" width="100"
+                        height="45" />
+                </div>
+                <div class="banner-center">
+                    <img alt="banner" src="/Content/images/banner.png" width="800"
+                        height="45" />
+                </div>
+                <div class="banner-right">
+                    <div style="font-size: 15px;">
+                        
+                        <div style="float: left; line-height: 40px; font-family: Tahoma; font-weight: bold;
+                            margin-right: 5px">
+                            <div style="color: #0061AD; text-decoration: none;" class="student-info">
+                                L&#234; Huỳnh Thị Ngọc
+                                H&#226;n
+                            </div>
+                        </div>
+                        <div class="button-wrap">
+                            <div class="home-button home">
+                            </div>
+                        </div>
+                        <div class="button-wrap">
+                            <div class="change-pass-button">
+                            </div>
+                        </div>
+                        <div class="button-wrap">
+                            <div class="logout-button">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            
+    
+    <link href="/Content/reak/reak-square-grid/reak-square.css?v=1101151505"
+        rel="stylesheet" type="text/css" />
+    <script src="/Content/reak/reak-square-grid/reak-square.js?v=1101151505"
+        type="text/javascript"></script>
+    <script src="/Scripts/views/home/home.js?v=1101151505" type="text/javascript"></script>
+    
+    <div>
+        
+<script src="/Content/reak/reak-news/reak-news-popup.js?v=1101151505"
+    type="text/javascript"></script>
+<link href="/Content/reak/reak-news/reak-news-popup.css?v=1101151505"
+    rel="stylesheet" type="text/css" />
+
+<style>
+    .lbl-lang
+    {
+        color: Gray;
+        font-size: 0.9em;
+        padding-left: 0.5em;
+    }
+</style>
+
+<div id="light" class="popup-thong-bao-content popup-thong-bao-content-center">
+    
+    
+    
+    <div class="popup-thong-bao-content-header popup-thong-bao-content-header-center">
+        THÔNG BÁO | NOTICFICATION
+    </div>
+    
+    
+    <div class="popup-thong-bao-content-main">
+        <div class="popup-thong-bao-content-main-item-header" style="">
+            <i class="fa fa-star" style="color: #F4D246;"></i><a href="http://studentnews.tdtu.edu.vn/"
+                style="color: Red;" target="_blank">BẠN CÓ
+                
+                THÔNG BÁO QUAN TRỌNG CHƯA ĐỌC
+                <div class="lbl-lang">
+                    | YOU HAVE UNREAD IMPORTANT NOTICES
+                </div>
+            </a>
+        </div>
+        <div class="popup-thong-bao-content-main-item-main">
+        </div>
+    </div>
+    
+    <div class="popup-thong-bao-content-main">
+        <div class="popup-thong-bao-content-main-item-header" style="color: Red;">
+            NGƯỜI ĐI HỌC ĐẠI HỌC ĐẦU TIÊN TRONG GIA ĐÌNH
+        </div>
+        <div class="popup-thong-bao-content-main-item-main">
+            Thời gian thực hiện trắc nghiệm: <b style="color: Red;">Từ ngày 16/10/2020 đến hết ngày
+                16/11/2020</b>
+            <br />
+            <a href="https://survey-beta.tdtu.edu.vn/SinhVien/nguoi_di_hoc_dai_hoc_dau_tien_trong_gia_dinh" target="_blank" style="color: Red;
+                font-weight: bold;">Click tại đây để bắt đầu khảo sát!</a>
+        </div>
+    </div>
+    
+    <div class="popup-thong-bao-content-main">
+        <div class="popup-thong-bao-content-main-item-header" style="color: Red;">
+            <a href="http://tuvanhocduong.tdt.edu.vn/gttvtl" target="_blank">ĐĂNG KÝ THAM VẤN TÂM
+                LÝ HỌC ĐƯỜNG</a>
+        </div>
+        <div class="popup-thong-bao-content-main-item-main">
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <div class="popup-thong-bao-content-footer popup-thong-bao-content-footer-center"
+        style="padding-top: 50px;">
+        <div id="popup-thong-bao-off">
+            ĐÓNG | CLOSE</div>
+    </div>
+</div>
+<div id="fade" class="black_overlay">
+</div>
+<script type="text/javascript">
+    var w_light = $("#light").width();
+    //    console.log(w_light);
+
+    $("#rny").css('width', (w_light - 10) + "px");
+</script>
+
+    </div>
+    
+    
+    <div>
+        
+<link href="/Content/reak/reak-news/reak-notics.css" rel="stylesheet"
+    type="text/css" />
+<style>
+    .lbl-lang
+    {
+        color: Gray;
+        font-size: 0.9em;
+        padding-left: 0.5em;
+    }
+</style>
+
+<div class="notics notics-header">
+    BẢNG THÔNG TIN | NOTICE BOARD
+</div>
+
+
+
+<div class="notics notics-item" style="background-color: transparent; color: Red;">
+    <div class="notics-item-number">
+        <i class="fa fa-calendar"></i>
+    </div>
+    <div>
+        <label class="fa-color-info">
+            HỌC KỲ HIỆN TẠI:
+            1/2020-2021
+            <span class="lbl-lang">| CURRENT SEMESTER:
+                1/2020-2021</span>
+        </label>
+    </div>
+</div>
+
+
+<div class="notics notics-item" style="background-color: DarkRed; color: White;">
+    <div class="notics-item-number" style="background-color: Green;">
+        <i class="fa fa-warning"></i>
+    </div>
+    <div>
+        Kết quả đăng ký môn học của sinh viên có sự điều chỉnh và cập nhật lúc <span style="color: Yellow;
+            font-weight: bold;">
+            17:24:36 26/10/2020.</span>
+        <br />
+        Sinh viên vui lòng chọn phân hệ "ĐÀO TẠO" xem lại kết quả. Trong trường hợp, sinh
+        viên có thắc mắc vui lòng liên hệ văn phòng tư vấn & hỗ trợ (P.E0001) để được giải
+        đáp.
+    </div>
+    <div class="lbl-lang" style="color: White;">
+        | The Students' course registration results are adjusted and updated at <span style="color: Yellow;
+            font-weight: bold;">
+            17:24:36 26/10/2020.</span><br />
+        Please select the "EDUCATION" module to review the results. Should students have
+        any questions, please contact the Student service office (Room E.0001) for answers.
+    </div>
+</div>
+
+
+<div class="notics notics-item" style="background-color: inherit; color: inherit;">
+    <div class="notics-item-number">
+        <i class="fa fa-star"></i>
+    </div>
+    <div>
+        <b class="fa-color-error">CẢNH BÁO VỀ VIỆC SỬ DỤNG CÁC ỨNG DỤNG NGOÀI TRƯỜNG
+            <div class="lbl-lang">
+                WARNING ON USING APPLICATIONS THAT DON’T BELONG TO TDTU
+            </div>
+        </b>Hiện tại, xuất hiện một số ứng dụng không do Nhà trường phát triển tại các kho
+        ứng dụng CH Play & App Store, các bạn sinh viên <b>KHÔNG NÊN</b> sử dụng các ứng
+        dụng này để tránh bị lợi dụng thu thập thông tin cá nhân.
+        <br />
+        Chỉ sử dụng các hệ thống do Nhà trường cung cấp và các hệ thống đã được Nhà trường
+        xác nhận.
+        <br />
+        Việc tự ý cung cấp thông tin tài khoản (bằng bất kỳ hình thức nào: cung cấp thông
+        tin khảo sát, đăng nhập vào hệ thống ngoài trường, v.v...) cho bất kỳ đơn vị/cá
+        nhân nào không thuộc quản lý của Nhà trường dẫn đến mất mát thông tin, Nhà trường
+        không chịu trách nhiệm.
+        <br />
+        <b class="fa-color-error">Xem cách nhận diện các hệ thống của Nhà trường tại <a href="/Home/dmht"
+            target="_blank">DANH MỤC HỆ THỐNG</a></b> <b class="fa-color-info">
+                <br />
+                LƯU Ý:
+                <br />
+                + Để đảm bảo an toàn thông tin, các bạn sinh viên PHẢI bảo quản tài khoản Cổng thông
+                tin sinh viên cẩn thận!</b>
+        <div class="lbl-lang">
+            Currently, there are some applications were not developed by the TDTU in CH Play
+            & App Store, students should NOT use these applications to avoid being exploited
+            to collect personal information.
+            <br />
+            Only use the systems provided by TDTU and the systems have been confirmed by the
+            TDTU.
+            <br />
+            Arbitrary provision of account information (by any means: providing survey information,
+            logging into an system that doesn’t belong to TDTU, etc.) to any unit/person not
+            under the management of TDTU leads to information loss, TDTU will not be responsible.
+            <br />
+            See how to identify the TDTU systems in the SYSTEM LIST
+            <br />
+            NOTE:
+            <br />
+            + To ensure the information security, students MUST preserve the Student’s Portal
+            account carefully</div>
+    </div>
+</div>
+<div class="notics notics-item" style="background-color: inherit; color: inherit;">
+    <div class="notics-item-number">
+        <i class="fa fa-star"></i>
+    </div>
+    <div>
+        <b class="fa-color-error">CẢNH BÁO GIẢ MẠO</b>
+        <br />
+        Nhiều đối tượng giả mạo email của Nhà trường và các đơn vị thuộc Nhà trường nhằm
+        trục lợi từ các bạn sinh viên, mỗi bạn cần tìm hiểu thông tin thật kỹ trước khi
+        cung cấp một thông tin cá nhân nào của mình.
+        <br />
+        Mọi email từ Nhà trường đều có phần mở rộng là <b>"@tdtu.edu.vn" và có chữ ký nhận dạng
+            bên dưới.</b>
+        <div class="lbl-lang">
+            | Currently, there are many delinquents who forge the email of TDTU and its units
+            in order to profit from students. Each of you needs to find out the information
+            carefully before providing any personal information. All emails from the University
+            have the extension as "@tdtu.edu.vn" and have the identification signature at the
+            bottom.</div>
+    </div>
+</div>
+
+<div class="notics notics-item" style="">
+    <div class="notics-item-number">
+        <i class="fa fa-star"></i>
+    </div>
+    <div>
+        <label class="fa-color-info">
+            Truy cập <a href="https://www.facebook.com/tdtsoftware/" target="_blank">Facebook TDT
+                Software Engineering</a> để được hỗ trợ về các vấn đề kỹ thuật.</label>
+        <div class="lbl-lang">
+            | Visit <a href="https://www.facebook.com/tdtsoftware/" target="_blank">Facebook TDT
+                Software Engineering</a> for technical support.
+        </div>
+    </div>
+</div>
+<div class="notics notics-header" style="margin-bottom: 1em;">
+</div>
+
+    </div>
+    <div class="square-main">
+        
+<input type="text" class="form-control hide" id="MSSV" name="MSSV" value="51900330" />
+<input type="text" class="form-control hide" id="HoTen" name="HoTen" value="L&#234; Huỳnh Thị Ngọc H&#226;n" />
+
+<div class="wrap-square" style="position: relative;">
+    <div class="square shrink brighten sq-tb">
+    </div>
+    
+</div>
+
+<div class="wrap-square">
+    <div class="square shrink brighten sq-qlttsv">
+    </div>
+</div>
+<div class="wrap-square">
+    <div class="square shrink brighten sq-dkmh-main">
+    </div>
+</div>
+
+<div class="wrap-square">
+    <div class="square shrink brighten sq-hplp">
+    </div>
+</div>
+
+<div class="wrap-square">
+    <div class="square shrink brighten sq-bhyt">
+    </div>
+</div>
+
+<div class="wrap-square">
+    <div class="square shrink brighten sq-elearning">
+    </div>
+</div>
+<div class="wrap-square">
+    <div class="square shrink brighten sq-elearning-kaizen">
+    </div>
+</div>
+<div class="wrap-square">
+    <div class="square shrink brighten sq-diem">
+    </div>
+</div>
+
+<div class="wrap-square">
+    <div class="square shrink brighten sq-cnsv">
+    </div>
+</div>
+
+<div class="wrap-square">
+    <div class="square shrink brighten sq-emailsv">
+    </div>
+</div>
+
+<div class="wrap-square">
+    <div class="square shrink brighten sq-gdtt">
+    </div>
+</div>
+
+<div class="wrap-square">
+    <div class="square shrink brighten sq-hdpt">
+    </div>
+</div>
+
+
+
+<div class="wrap-square">
+    <div class="square shrink brighten sq-qchv">
+    </div>
+</div>
+
+<div class="wrap-square">
+    <div class="square shrink brighten sq-survey">
+    </div>
+</div>
+
+
+
+
+<div class="wrap-square">
+    <div class="square shrink brighten sq-inspirelibrary">
+    </div>
+</div>
+<div class="wrap-square">
+    <div class="square shrink brighten sq-sportsclub">
+    </div>
+</div>
+<div class="wrap-square">
+    <div class="square shrink brighten sq-clcclubs">
+    </div>
+</div>
+<div class="wrap-square">
+    <div class="square shrink brighten sq-sdh-dkbd">
+    </div>
+</div>
+<div class="wrap-square">
+    <div class="square shrink brighten sq-tsnn">
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    squaregrid(4, $(".square-main"), $(".wrap-square"), $(".square"));
+</script>
+
+    </div>
+
+            <div id="fb-like" style="position: fixed; right: -5px; top: 75px;">
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftdtsoftware%2F&width=120&layout=button_count&action=like&show_faces=false&share=true&height=46&appId"
+                    width="120" height="46" style="border: none; overflow: hidden" scrolling="no"
+                    frameborder="0" allowtransparency="true"></iframe>
+            </div>
+            
+        </div>
+        <div class="footer" align="center">
+            <div style="padding: 10px 0px 10px 0px;">
+                ©2013 Đại học Tôn Đức Thắng
+                <br />
+                Ứng dụng được phát triển bởi Tổ phát triển phần mềm - CAIT
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
